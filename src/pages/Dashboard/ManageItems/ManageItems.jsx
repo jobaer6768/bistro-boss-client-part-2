@@ -1,9 +1,8 @@
-import { FaEdit, FaTrashAlt } from "react-icons/fa";
+import { FaTrashAlt } from "react-icons/fa";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import useMenu from "../../../hooks/useMenu";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
-import { Link } from "react-router-dom";
 
 
 const ManageItems = () => {
@@ -80,13 +79,13 @@ const ManageItems = () => {
                                     </td>
                                     <td className="text-right">${item.price}</td>
                                     <td>
-                                        <Link to={`/dashboard/updateItem/${item._id}`}>
+                                        {/* <Link to={`/dashboard/updateItem/${item._id}`}>
                                             <button
                                                 className="btn btn-ghost btn-lg bg-orange-500">
                                                 <FaEdit className="text-white 
                                         "></FaEdit>
                                             </button>
-                                        </Link>
+                                        </Link> */}
                                     </td>
                                     <td>
                                         <button
